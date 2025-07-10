@@ -1,0 +1,70 @@
+
+.qr-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+}
+.qr-cont h1{
+    text-align: center;
+}
+.qr-cont a{
+    background: rgb(0, 0, 0);
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    border-radius: 20px;
+    margin-top: 2rem;
+    transition: transform 0.3s ease-in-out;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.qr-cont a:hover{
+    transform: scale(1.1);
+    background-color: rgb(1, 255, 1);
+    color: black;
+}
+
+.qr-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin:2rem 0;
+}
+.qr-form input{
+    border: 1px solid grey;
+    outline: none;
+    border-radius: 20px;
+    height: 4rem;
+    width: 20rem;
+    padding: 1rem;
+    background: white;
+}
+.qr-form button{
+    border: none;
+    background: black;
+    color: white;
+    height: 4rem;
+    padding: 1rem;
+    border-radius: 20px;
+}
+.qr-form button:hover{
+    border: 1px solid white;
+}
+.qr-cont img{
+    height: 16rem;
+    width: 16rem;
+}
+@media (max-width: 600px) {
+  .qr-form {
+    flex-direction: column;
+    align-items: stretch; /* makes input & button full‑width */
+  }
+
+  .qr-form input,
+  .qr-form button {
+    width: 100%;
+  }
+}
